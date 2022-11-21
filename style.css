@@ -40,8 +40,13 @@ li {
     list-style: none;
     margin: auto 100px;
     padding: 20px;
-    border: 1px solid tomato;
+    cursor: pointer;
+    /* border: 1px solid tomato; */
     color: var(--nav-background-color);
+}
+li a {
+    text-decoration: none;
+    color: #fdd868;
 }
 li .logo {
     border: 1px solid white;
@@ -64,6 +69,7 @@ li input {
 li h2 {
     text-align: center;
     margin-bottom: 25px;
+    font-size: 50px;
 }
 
 .cart-and-profile {
@@ -72,7 +78,7 @@ li h2 {
     align-items: center;
     justify-content: space-evenly;
 }
-.cart, .profile {
+.cart, .profile  {
     height: fit-content;
     color: #fdd868;
 }
@@ -87,7 +93,7 @@ li h2 {
     display: flex;
     height: 70vh;
     /* border: 1px solid gray; */
-    /* background: url(../personal-site/images/pexels-karolina-grabowska-4016628.jpg); */
+    background: url(../personal-site/images/pexels-karolina-grabowska-4016628.jpg);
     background-position:center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -129,6 +135,9 @@ li h2 {
     background-color: var(--primary-color);
 }
 
+main {
+    height: 50vh;
+}
 .search {
     width: 40%;
     height: 40px;
@@ -160,4 +169,17 @@ input {
 footer {
     background-color: var(--headline-color-on-white);
     padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .text-boxes, .logo-boxes {
+    border: 1px solid tomato;
+    padding: 10px;
+    color: #fdd868;
+}
+
+.text-boxes a {
+    color: var(--nav-background-color);
+    text-decoration: none;
 }
