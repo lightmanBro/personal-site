@@ -103,7 +103,8 @@ li h2 {
 
 .hero {
     display: flex;
-    height: 70vh;
+    height: fit-content;
+    padding: 50px;
     /* border: 1px solid gray; */
     background: url(../personal-site/images/pexels-karolina-grabowska-4016628.jpg);
     background-position:center;
