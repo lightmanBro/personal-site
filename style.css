@@ -24,7 +24,9 @@
   --nav-hover-link-color: white;
   --nav-hover-background-color: #396E94;
 }
-
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 nav ul {
     display: flex;
     align-items: center;
@@ -47,6 +49,16 @@ li {
 li a {
     text-decoration: none;
     color: #fdd868;
+}
+.hover {
+    padding: 10px;
+    display: inline-block;
+}
+.hover:hover{
+    /* border: 1px solid var(--nav-link-color); */
+    transition:all .4s;
+    background-color: #396E94;
+    
 }
 li .logo {
     border: 1px solid white;
@@ -103,10 +115,14 @@ li h2 {
     align-self: flex-end;
     margin: auto;
     padding: 20px;
+    color: white;
+    border-radius: 10px;
     /* border: 1px solid black; */
-    height: 50vh;
+    height: fit-content;
     width: 50%;
+    background-color: #2c3c476b;
     backdrop-filter: blur(5px);
+    box-shadow: 0px 2.5px 5px rgb(83, 83, 83);
 }
 .hero-text-box h2 {
     text-transform: uppercase;
@@ -147,6 +163,7 @@ main {
 input {
     border: none;
     outline: none;
+    box-shadow: 0px 2.5px 5px rgb(83, 83, 83)
 }
 .button {
     padding: 10px 50px;
@@ -155,6 +172,7 @@ input {
     background-color: var(--headline-color-on-white);
     width: fit-content;
     color: var(--secondary-color);
+    box-shadow: 0px 2.5px 5px rgb(83, 83, 83)
     
 }
 
@@ -174,7 +192,7 @@ footer {
     justify-content: space-between;
 }
 footer .text-boxes, .logo-boxes {
-    border: 1px solid tomato;
+    /* border: 1px solid tomato; */
     padding: 10px;
     color: #fdd868;
 }
@@ -182,4 +200,12 @@ footer .text-boxes, .logo-boxes {
 .text-boxes a {
     color: var(--nav-background-color);
     text-decoration: none;
+}
+
+.red {
+    background-color: #c94331;
+}
+
+.blue {
+    background-color: #396E94;
 }
