@@ -188,10 +188,24 @@ input {
     width: 100%;
     height: fit-content;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 .content-display-box {
     padding: 20px;
-    border: 2px solid black;
+    border: 2px solid var(--headline-color-on-white);
+    width: 30%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+.goods-box {
+    border: 1px solid var(--nav-link-color);
+    width: 50%;
+    height: 200px;
 }
 footer {
     background-color: var(--headline-color-on-white);
