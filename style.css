@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 :root {
-    --primary-color: #58bd99   ;
-  --secondary-color: #fdd868 ;
+    --primary-color: #58bd99;
+  --secondary-color: #fdd868;
   --accent1-color: #c94331;
   --accent2-color: white;
 
@@ -49,6 +49,15 @@ li {
 li a {
     text-decoration: none;
     color: #fdd868;
+    padding: 5px;
+    font-size: 20px;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+}
+li a:hover {
+    transition: all .5s;
+    border-bottom: 2px solid #fdd868;
+    border-width: 120%;
 }
 .hover {
     padding: 10px;
@@ -72,11 +81,15 @@ li .logo {
     width: 30%;
     padding: 20px;
 }
+li .input {
+    transform: skew(-0deg);
+}
 li input {
     width: 100%;
     border-radius: 15px;
     height: 30px;
     padding-inline-start: 20px;
+    transform: skew(-18deg);
 }
 li h2 {
     text-align: center;
@@ -116,9 +129,8 @@ li h2 {
     align-self: flex-end;
     margin: auto;
     padding: 20px;
-    color: white;
+    color: #fdd868;
     border-radius: 10px;
-    /* border: 1px solid black; */
     height: fit-content;
     width: 50%;
     background-color: #2c3c476b;
@@ -145,26 +157,33 @@ li h2 {
 
 .section-one {
     /* border: 1px solid black; */
+    box-shadow: 0px 2.5px 5px rgb(83, 83, 83);
+    /* border-radius: 50px; */
     padding: 10px 200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--primary-color);
+    transform: skewX(18deg);
 }
 
 main {
-    height: 50vh;
+    height: fit-content;
+    padding: 50px;
+    background-color: var(--headline-color-on-white);
 }
 .search {
     width: 40%;
     height: 40px;
     border-radius: 15px;
     padding-inline-start: 20px;
+    
 }
 input {
     border: none;
     outline: none;
-    box-shadow: 0px 2.5px 5px rgb(83, 83, 83)
+    box-shadow: 0px 2.5px 5px rgb(83, 83, 83);
+    transform: skew(-18deg);
 }
 .button {
     padding: 10px 50px;
@@ -186,29 +205,94 @@ input {
 }
 .section-two {
     width: 100%;
+    margin: 50px 0;
     height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
+.section2-hero-text {
+    margin: 20px;
+    padding: 0 100px;
+    color: #fdd868;
+    border: #fdd868 solid 2px;
+    box-shadow: 0px 2.5px 5px rgb(83, 83, 83);
+    background-color: var(--primary-color);
+    transform: skew(15deg);
+}
+.section2-hero-text h4 {
+    transform: skew(-15deg);
+}
+.section2-hero-text:hover {
+    transition: all .5s;
+    background-color: hsl(159, 37%, 25%);
+    cursor: pointer;
+}
 .content-display-box {
     padding: 20px;
-    border: 2px solid var(--headline-color-on-white);
-    width: 30%;
+    /* border: 2px solid var(--headline-color-on-white); */
+    width: 33%;
+   background-color: var(--primary-color);
     border-radius: 5px;
-    display: flex;
+    display:flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 5px;
+    box-shadow: 0px 2.5px 5px rgb(83, 83, 83);
+    gap: 15px;
+}
+.heading-text {
+    text-align: center;
+    box-shadow: 0px 2.5px 5px rgb(83, 83, 83);
+    /* margin-top: -50px; */
+    margin: -50px auto 0 auto;
+    padding: 10px;
+    color: #fdd868;
+    transform: skewX(18deg);
+    background-color: #2c3c47b2;
+    border: 2px solid #fdd868;
+}
+.heading-text h5{
+    transform: skew(-18deg);
+    padding: 5px;
 }
 .goods-box {
     border: 1px solid var(--nav-link-color);
-    width: 50%;
-    height: 200px;
+    width: 48%;
+    text-align: center;
+    font-size: 20px;
+    height: 300px;
+    border-radius: 2.5px;
+    box-shadow: 0px 2.5px 5px rgb(83, 83, 83)
+}
+.goods-box p {
+    color: transparent;
+    width: 100%;
+    height: 90%;
+    padding: 30px;
+    text-align: center;
+}
+.goods-box span {
+    /* border-bottom: 2px solid #fdd868; */
+    box-shadow: 0px 2.5px 5px rgb(83, 83, 83);
+    color: #fdd868;
+    transform: rotate(45deg);
+    padding: 0 24px;
+    background-color: #2c3c47b2;
+}
+.goods-box p:hover{
+    transition: all .6s;
+    color: white;
+    cursor: pointer;
+    background-color: #2c3c4791;
+    opacity: .6;
+    box-shadow: 0px 2.5px 5px rgb(83, 83, 83)
+    /* content: 'Goods 1'; */
 }
 footer {
     background-color: var(--headline-color-on-white);
+    border: 1px solid tomato;
     padding: 50px;
     display: flex;
     align-items: center;
