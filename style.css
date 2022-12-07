@@ -337,3 +337,8 @@ footer div {
     height: 35vh;
     margin: auto;
 }
+.box-3 {
+    border: #fdd868 solid 2px;
+    text-align: center;
+    margin: auto;
+}
