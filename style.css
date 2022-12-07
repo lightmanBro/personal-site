@@ -329,16 +329,75 @@ footer div {
 /* Page 3 */
 .page-3 {
     margin: auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .goods-box-3 {
     background-color: var(--primary-color);
     width: 35%;
     height: 35vh;
     margin: auto;
+    position: relative;
+}
+.goods-box-3 img {
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+}
+.goods-box-3 p {
+    position: absolute;
+    transform: translate(50%);
+    z-index: 10;
+}
+
+.checkout-goods-description {
+    border: 2px solid #fdd868;
+    padding: 20px;
 }
 .box-3 {
     border: #fdd868 solid 2px;
     text-align: center;
     margin: auto;
+    font-size: 35px;
+    box-shadow: 0px 2.5px 5px rgb(83, 83, 83);
+    cursor: pointer;
+}
+
+.border-ani {
+    width: 50%;
+    transform: translate(50%, 10%);
+    transition: all .7s;
+    border-right-width: 150px;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: #2c3c47;
+    color: #fdd868;
+    position: absolute;
+    z-index: 10;
+}
+
+.border-ani-page2{
+    width: fit-content;
+    height: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-right-width: 90px;
+    font-size: 15px;
+    border-radius: 50px;
+    color: #2c3c47;
+}
+
+.border-ani-page-title {
+    border: #fdd868 solid 2px;
+    text-align: center;
+    margin: auto;
+    font-size: 35px;
+    box-shadow: 0px 2.5px 5px rgb(83, 83, 83);
+    cursor: pointer;
+    border-radius: 30px;
+}
+.border-right {
+    border-right-width: 200px;
+    
 }
