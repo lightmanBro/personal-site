@@ -324,3 +324,16 @@ footer div {
 .blue {
     background-color: #396E94;
 }
+
+
+/* Page 3 */
+.page-3 {
+    margin: auto;
+    border: 2px solid red;
+}
+.goods-box-3 {
+    background-color: var(--primary-color);
+    width: 35%;
+    height: 35vh;
+    margin: auto;
+}
